@@ -19,7 +19,7 @@ def hello(name):
 def formDemo():
     if request.method == 'POST':
         name=request.form['name']
-           return render_template('form.html', name=name)
+        return render_template('form.html', name=name)
 
 
 #Add the option to run this file directly
