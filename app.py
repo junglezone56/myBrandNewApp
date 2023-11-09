@@ -16,7 +16,7 @@ def hello(name):
     return render_template('HTMLPage1.html',Sname = name, nameList = listofNames)
 
 @app.route('/form', methods=['GET', 'POST'])
-def formDemo()
+def formDemo():
     if request.method == 'POST':
         name=request.form['name']
    return render_template('form.html', name=name)
